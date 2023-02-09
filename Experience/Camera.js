@@ -1,4 +1,4 @@
-import Experience from "./Experience/Experience";
+import Experience from "./Experience";
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import { AxesHelper, GridHelper } from "three";
@@ -40,7 +40,7 @@ export default class Camera {
 
     // 6.5
     this.orthographicCamera.position.y = 3;
-    this.orthographicCamera.position.z = 4;
+    this.orthographicCamera.position.z = 4.65;
     this.orthographicCamera.rotation.x = -Math.PI / 6;
 
     this.scene.add(this.orthographicCamera);
