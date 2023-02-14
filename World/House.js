@@ -1,6 +1,7 @@
 import * as THREE from "three";
 import Experience from "../Experience/Experience";
 import gsap from "gsap";
+import { RectAreaLightHelper } from "three/examples/jsm/helpers/RectAreaLightHelper.js";
 
 export default class House {
   constructor() {
