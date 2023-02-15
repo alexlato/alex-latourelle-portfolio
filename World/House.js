@@ -38,7 +38,7 @@ export default class House {
     });
 
     this.scene.add(this.actualHouse);
-    this.actualHouse.scale.set(0.007, 0.007, 0.007);
+    this.actualHouse.scale.set(0.006, 0.006, 0.006);
   }
 
   onMouseMove() {

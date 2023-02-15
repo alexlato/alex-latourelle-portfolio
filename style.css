@@ -286,20 +286,20 @@ svg {
 
 .hero-main {
   position: absolute;
-  bottom: 368px;
+  bottom: 300px;
   left: 0;
   color: var(--color-text);
 }
 
 .hero-second {
   position: absolute;
-  top: calc(50% - 120px);
+  top: calc(50% - 180px);
   right: 0;
   color: var(--color-text);
 }
 
 .hero-main-title {
-  font-size: 64px;
+  font-size: 56px;
 }
 
 .hero-main-description {

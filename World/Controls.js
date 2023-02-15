@@ -34,10 +34,50 @@ export default class Controls {
         invalidateOnRefresh: true,
       },
     });
+
+    this.timeline.to(this.house.position, {
+      x: () => {
+        return this.sizes.width * -0.0012;
+      },
+      scrollTrigger: {
+        trigger: ".second-move",
+        start: "top top",
+        end: "bottom bottom",
+        scrub: 0.8,
+        invalidateOnRefresh: true,
+      },
+    });
+
+    this.timeline.to(this.house.position, {
+      x: () => {
+        return this.sizes.width * 0.0012;
+      },
+      scrollTrigger: {
+        trigger: ".third-move",
+        start: "top top",
+        end: "bottom bottom",
+        scrub: 0.8,
+        invalidateOnRefresh: true,
+      },
+    });
   }
 
   setScrollTrigger() {
     ScrollTrigger.matchMedia({
+      //Desktop
+      "(min-width: 969px)": () => {
+        console.log("fired desktop");
+
+        this.house.scale.set(0.006, 0.006, 0.006);
+      },
+
+      //Mobile
+      "(max-width: 968px)": () => {
+        console.log("fired mobile");
+
+        this.house.scale.set(0.003, 0.003, 0.003);
+      },
+
       all: () => {
         this.sections = document.querySelectorAll(".section");
         this.sections.forEach((section) => {
