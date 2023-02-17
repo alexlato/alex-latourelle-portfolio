@@ -34,6 +34,10 @@ export default class House {
         });
       }
 
+      if (child.name === "TextExtrude") {
+        child.castShadow = false;
+      }
+
       // console.log(child);
     });
 
